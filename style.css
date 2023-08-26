@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(0.5turn, #e9d2d2, #cdcff1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark-mode{
+    background: linear-gradient(rgb(86 80 80), rgb(80 81 98));
+    color: white; 
+}
+.container {
+  max-width: 350px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px 8px rgba(0, 0, 255, 0.2);
+}
+.dark-mode .container{
+    box-shadow: 1px 1px 20px 8px rgba(189, 189, 235, 0.2);
+}
+.toggle button{
+    position: absolute;
+    bottom: 317px;
+    right: 9px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 255, 0.2);
+    border: 0 solid black;
+    padding: 10px;
+}
+.dark-mode .toggle button{
+    box-shadow: 1px 1px 20px 1px rgba(189, 189, 235, 0.2);
+}
+.dark-mode .box{
+    color: white;
+}
+.text {
+  font-size: 20px;
+  padding: 10px 0 0 0;
+}
+.box {
+  background: transparent;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 255, 0.2);
+  width: 85%;
+}
+.dark-mode .box{
+    box-shadow: 1px 1px 20px 1px rgba(189, 189, 235, 0.2);
+}
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 5px;
+  margin-left: 0;
+}
+#length {
+  width: 45px;
+  padding-left: 5px;
+  color: black;
+  border: none;
+}
+.additional {
+  margin-block: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.additional button {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.2);
+}
+.dark-mode .additional button{
+    box-shadow: 1px 1px 1px 1px  rgba(189, 189, 235, 0.2);
+    color: white;
+}
+.fa-key,
+.fa-copy,
+.fa-circle-check {
+  padding-right: 10px;
+}
+#copied {
+  display: none;
+}
+#copy {
+  display: block;
+}
+.fa-sun{
+    color: white;
+}
+input[type="checkbox"], button{
+    cursor: pointer;
+}
